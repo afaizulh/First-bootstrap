@@ -42,14 +42,19 @@
   margin-top: -10rem;
 }
 
+article {
+  background-color: dimgray;
+}
+
 #services {
   margin-top: 8rem;
 }
 
 #img-card {
   padding-top: 10px;
+  height: 10rem;
 }
 
 #card-content {
-  padding-top: 20px;
+  padding-bottom: 30px;
 }
