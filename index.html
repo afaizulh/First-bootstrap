@@ -211,31 +211,25 @@
         </div>
         <!-- Price Product -->
         <!-- Button -->
-        <a href="#" class="btn btn-primary text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">See The Prices</a>
-          </div>
+        <div class="button py-3 shadow-sm">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#price">
+            See The Prices
+          </button>
+        </div>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="price" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Check the Connection!</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
-                  </div>
-                </form>
+               Ops! There is no connection. Please check your connection!
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
+                <button type="button" class="btn btn-primary">Reload</button>
               </div>
             </div>
           </div>
@@ -258,16 +252,21 @@
     </div>
     <!-- Akhir Quote -->
 
+
+
+
     <!-- Footer -->
     <div id="copyright" align="center">
       &copy; Sony Corporation
-  </div>
-  </body>
+    </div>
 
-  <!-- AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <!-- AOS -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
 
-  <script>
-    AOS.init();
-  </script>
+    <!-- Bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body> 
 </html>
