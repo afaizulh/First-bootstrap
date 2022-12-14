@@ -14,7 +14,6 @@
 }
 
 .bg-header {
-  background-image: url(../Img/pexels-pixabay-355465.jpg);
   background-position: center;
   width: 100%;
   height: 100vh;
@@ -42,6 +41,14 @@
   margin-top: -10rem;
 }
 
+#gambar-about {
+  transition: 400ms;
+}
+
+#gambar-about:hover {
+  transform: scale(1.05);
+}
+
 article {
   background-color: rgb(165, 165, 165);
 }
@@ -65,4 +72,9 @@ article {
 
 .container.card:hover {
   transform: scale(1.05);
+}
+
+#copyright {
+  padding: 10px;
+  text-align: center;
 }

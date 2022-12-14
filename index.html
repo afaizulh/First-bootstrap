@@ -14,6 +14,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/style.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <!-- CDN Video -->
@@ -65,7 +68,7 @@
             <img
               src="./Img/pexels-pixabay-355465.jpg"
               width="100%"
-              height="auto"
+              height="100%"
               alt=""
             />
           </div>
@@ -80,11 +83,8 @@
                 class="form-control me-2"
                 type="search"
                 placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
+                aria-label="Search">
+            </input>
             </form>
           </div>
         </div>
@@ -95,7 +95,9 @@
     <!-- About -->
     <div id="about" class="container justify-content-center">
       <div id="about-content" class="row text-center">
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
           <img
             id="gambar-about"
             class="w-50 shadow rounded"
@@ -103,7 +105,9 @@
             alt=""
           />
         </div>
-        <div class="col-md-12 col-lg-6">
+        <div class="col-md-12 col-lg-6" data-aos="flip-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
           <h2 id="judul-about" class="fw-bold">About</h2>
           <p class="px-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -119,13 +123,14 @@
     </div>
     <!-- Akhir About -->
 
-    <!-- Services -->
+    <!-- Product -->
     <article>
       <div id="product" class="container text-center">
-        <h2 class="text-center text-light fw-bold py-3 shadow-sm">Product</h2>
+        <h2 class="text-center text-light fw-bold py-3">Product</h2>
         <div class="row">
           <!-- Card 1 -->
-          <div id="card-content" class="col-md-6 col-lg-3">
+          <div id="card-content" class="col-md-6 col-lg-3" data-aos="fade-up"
+          data-aos-duration="900" data-aos-anchor-placement="center-bottom">
             <div class="container card shadow-sm">
               <img
                 src="./Img/Meet Sony's £400 camera lens for iPhone and Android_ the QX100.jfif"
@@ -144,8 +149,9 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div id="card-content" class="col-md-6 col-lg-3">
-            <div class="container card">
+          <div id="card-content" class="col-md-6 col-lg-3" data-aos="fade-up"
+          data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <div class="container card shadow-sm">
               <img
                 src="./Img/Sony a7III with the Tamron 17-28mm 2_8.jfif"
                 id="img-card"
@@ -163,8 +169,9 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div id="card-content" class="col-md-6 col-lg-3">
-            <div class="container card">
+          <div id="card-content" class="col-md-6 col-lg-3" data-aos="fade-up"
+          data-aos-duration="2000" data-aos-anchor-placement="center-bottom">
+            <div class="container card shadow-sm">
               <img
                 src="./Img/Sony Digital Vlog Camera ZV 1.jfif"
                 id="img-card"
@@ -182,8 +189,9 @@
             </div>
           </div>
           <!-- Card 4 -->
-          <div id="card-content" class="col-md-6 col-lg-3">
-            <div class="container card">
+          <div id="card-content" class="col-md-6 col-lg-3" data-aos="fade-up"
+          data-aos-duration="3000" data-aos-anchor-placement="center-bottom">
+            <div class="container card shadow-sm">
               <img
                 src="./Img/Obtenga Un Camara Video Galería De Cama Diseño.jfif"
                 id="img-card"
@@ -201,21 +209,65 @@
             </div>
           </div>
         </div>
+        <!-- Price Product -->
+        <!-- Button -->
+        <a href="#" class="btn btn-primary text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">See The Prices</a>
+          </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </article>
-    <!-- Akhir Sevices -->
+    <!-- Akhir Product -->
 
-    <!-- Footer -->
+    <!-- Quote -->
     <div class="card mx-5 my-5">
       <div class="card-header bg-dark text-light fw-bold">Quote</div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
-          <p>A well-known quote, contained in a blockquote element.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eos ut hic autem quo beatae laboriosam ea suscipit, harum error doloremque quaerat veniam porro minus, a doloribus voluptatem, placeat rem?</p>
           <footer class="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
+            Someone famous in <cite title="Source Title">Mars</cite>
           </footer>
         </blockquote>
       </div>
     </div>
+    <!-- Akhir Quote -->
+
+    <!-- Footer -->
+    <div id="copyright" align="center">
+      &copy; Sony Corporation
+  </div>
   </body>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </html>
